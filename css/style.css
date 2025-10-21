@@ -1,0 +1,1400 @@
+/*************------------------------------
+ * Theme Name: Besiva - HTML Responsive Multipurpose Coming Soon Template
+ * Author: balthemes;
+ * Description: A Bootstrap-4 Responsive Multipurpose Business Agency Template
+ * Version: 1.1
+ * Bootstrap v4.0 (http://getbootstrap.com)
+ * Copyright 2020.
+
+------------------------------*************/
+
+
+/*************------------------------------ 
+   
+   CSS INDEX    ===================   
+    
+    01. Menu Toggle
+    02. Information Toggle
+    02. Common Css for all Screens
+    03. Index 1
+    04. Index 2
+    05. Index 3
+    06. Index 4
+    07. Index 5    
+    08. Index Gym
+    09. Index Tour & Travels
+    10. Index Medical
+    11. Index Hotel
+    12. Index Salon
+
+-----------------------------*************/
+
+
+/*** Menu Toggle Start ***/
+
+.menu-sec {
+	width: 400px;
+	height: 100vh;
+	right: -400px;
+	position: fixed;
+	transition: all 0.5s ease;
+	z-index: 9999;
+	background: #fff;
+	top: 0;
+	border-left: solid 1px #ffffff10;
+}
+
+.menu-sec.active {
+	right: 0%;
+	box-shadow: -40px 40px 100px #00000040;
+}
+
+.menu-toggle {
+	cursor: pointer;
+	left: -70px;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	padding: 11px 0;
+	position: absolute;
+	border-radius: 100%;
+	display: block;
+	background: #fff;
+	border: solid 1px #ccc;
+	bottom: 60px;
+}
+
+.menu-toggle span {
+	height: 2px;
+	width: 20px;
+	display: block;
+	margin: 5px auto;
+	background: #262626;
+	transition: all 0.1s ease;
+}
+
+.menu-sec.active .menu-toggle {
+	padding: 17px 0px;
+}
+
+.menu-sec.active .menu-toggle span:first-child {
+	transform: rotate(45deg);
+	margin-bottom: -7px;
+}
+
+.menu-sec.active .menu-toggle span:nth-child(2) {
+	opacity: 0;
+}
+
+.menu-sec.active .menu-toggle span:last-child {
+	transform: rotate(-45deg);
+	margin-top: -7px;
+}
+
+.menu-content {
+	height: 100%;
+	position: relative;
+	overflow-x: auto;
+}
+
+.menu-content ul {
+	padding: 20px;
+	position: relative;
+	z-index: 999;
+}
+
+.menu-content ul li {
+	border: solid 1px #ffffff10;
+	margin-bottom: 20px;
+}
+
+.menu-content ul li:last-child {
+	margin-bottom: 0px;
+}
+
+.menu-content .heading {
+	margin: 0 auto;
+	margin-bottom: 40px;
+	padding-bottom: 10px;
+	text-align: center;
+	width: 400px;
+	z-index: 9999;
+	position: relative;
+}
+
+.menu-content .heading h2 {
+	color: #262626;
+	font-weight: 600;
+	position: relative;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	line-height: 1;
+}
+
+.menu-content .heading h2 span {
+	font-weight: 200;
+}
+
+.menu-content .heading h2:after {
+	content: '';
+	height: 1px;
+	width: 100px;
+	display: block;
+	border-top: dashed 3px #262626;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
+.menu-content .heading h6 {
+	color: #262626;
+	font-weight: 400;
+}
+
+
+/*** Menu Toggle End ***/
+
+
+/*** Information Toggle Start ***/
+
+.info-sec {
+	width: 55%;
+	height: 100vh;
+	left: -55%;
+	position: absolute;
+	background: #ffffff;
+	transition: all 0.5s ease;
+	z-index: 9999;
+	top: 0;
+	border-right: solid 5px #ccc
+}
+
+.info-sec.active {
+	left: 0%;
+	box-shadow: 40px 40px 100px #00000040;
+}
+
+.info-toggle {
+	cursor: pointer;
+	height: auto;
+	font-family: 'Poppins', sans-serif;
+	width: auto;
+	text-align: center;
+	width: auto;
+	text-align: center;
+	padding: 14px 20px;
+	right: -100px;
+	top: 60px;
+	position: absolute;
+	border-radius: 50px;
+	display: inline-block;
+	background: #fff;
+	border: solid 1px #ccc;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+section {
+	position: relative;
+	padding: 80px;
+}
+
+.info-content {
+	height: 100%;
+	overflow-y: auto;
+}
+
+.info-content .heading {
+	margin: 0;
+	margin-bottom: 40px;
+	padding-bottom: 10px;
+	width: 90%;
+	z-index: 9999;
+	position: relative;
+}
+
+.info-content .heading h2 {
+	color: #262626;
+	font-weight: 600;
+	position: relative;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	line-height: 1;
+}
+
+.info-content .heading h2 span {
+	font-weight: 200;
+}
+
+.info-content .heading h2:after {
+	content: '';
+	height: 1px;
+	width: 100px;
+	display: block;
+	border-top: dashed 3px #262626;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.info-content .heading h6 {
+	color: #262626;
+	font-weight: 400;
+}
+
+
+/* - About Section Start - */
+
+section.about-us {
+	background: #f9f9f9;
+}
+
+section.about-us::after {
+	content: 'About Us';
+	font-size: 150px;
+	position: absolute;
+	z-index: 0;
+	color: #fff;
+	top: -25px;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+	font-weight: 800;
+}
+
+.about-us .detail {
+	margin-top: 40px;
+}
+
+.about-us .detail i {
+	font-size: 50px;
+	width: 100px;
+	height: 100px;
+	line-height: 80px;
+	margin: 0;
+	text-align: center;
+	display: block;
+	background: #fff;
+	border-radius: 100%;
+	padding: 10px;
+	color: #c5c5c5;
+}
+
+.about-us .detail h4 {
+	margin: 20px 0;
+}
+
+.about-us .detail h4 span {
+	font-weight: 200;
+}
+
+.about-us .detail p {
+	font-size: 14px;
+	line-height: 24px;
+	color: #797979;
+}
+
+
+/* - About Section End - */
+
+
+/* - Contact Section Start - */
+
+section.contact,
+section.contact a {
+	color: #262626;
+}
+
+section.contact::after {
+	content: 'Contact Us';
+	font-size: 150px;
+	position: absolute;
+	z-index: 0;
+	color: #f9f9f9;
+	top: -25px;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+	font-weight: 800;
+}
+
+.contact-form {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.contact-form form {
+	width: 100%;
+}
+
+.contact-form .form-group {
+	margin-bottom: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+	padding: 15px 0;
+	background: none;
+	border: none;
+	border-bottom: solid 2px #262626;
+	width: 100%;
+	transition: all 0.5s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+	transform: scale(1.05);
+}
+
+.contact-form .submit {
+	width: 100%;
+	background: #262626;
+	border: none;
+	font-size: 16px;
+	padding: 10px;
+	color: #fff;
+	margin-top: 15px;
+}
+
+.contact-detail i {
+	font-size: 30px;
+}
+
+.contact-detail .description {
+	font-size: 16px;
+	color: #262626 !important;
+	width: 100%;
+	line-height: 26px;
+}
+
+.contact-detail h5 {
+	margin: 15px 0 20px 0;
+}
+
+.contact-detail a {}
+
+
+/* - Contact Section End - */
+
+
+/*** Information Toggle End ***/
+
+
+/*** Common Css Start ***/
+
+.wraper {
+	display: flex;
+	min-height: 100%;
+}
+
+.content {
+	width: 100%;
+}
+
+.logo {
+	width: 250px;
+}
+
+.description {
+	font-size: 14px;
+	color: #fff !important;
+	width: 70%;
+	line-height: 30px;
+}
+
+.display-3,
+.display-4 {
+	font-weight: 600;
+	margin-bottom: 20px;
+	color: #fff;
+	line-height: 1;
+}
+
+.subscribe {
+	width: 400px;
+}
+
+.subscribe-heading {
+	color: #fff;
+}
+
+.subscribe form {
+	width: 100%;
+	line-height: 1;
+	margin: 0;
+	padding: 0px;
+	background: #00000080;
+	border: solid 1px #ffff00;
+	display: inline-block;
+	border-radius: 50px;
+	display: inline-flex;
+	justify-content: space-between;
+}
+
+.subscribe input {
+	background: none;
+	border: none;
+	color: #fff;
+	font-size: 16px;
+	padding: 15px 25px;
+	line-height: 1;
+	width: 100%;
+}
+
+.subscribe button.send-mail {
+	border-radius: 0px 50px 50px 0px;
+	border: none;
+	padding: 10px 0;
+	width: 100px;
+	background: #ffff00;
+	color: #262626;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+
+/*** Common Css End ***/
+
+
+/*** Index 1 Start ***/
+
+.mockup-1 {
+	background: url(../img/cover-1.jpg);
+	background-size: cover;
+	background-position: center center;
+	height: 100%;
+}
+
+.mockup-1 canvas {
+	position: absolute;
+	z-index: -1;
+}
+
+.timer-1 {
+	padding: 0px 20px;
+	margin: 90px auto 70px;
+}
+
+.timer-1 .count-down {
+	padding: 30px 0;
+	font-size: 40px;
+	line-height: 1;
+	font-weight: bold;
+	color: #ffff00;
+	text-align: center;
+	display: inline-block;
+	width: 120px;
+	margin: 0px 22px;
+	height: 120px;
+	position: relative;
+}
+
+.timer-1 .count-down::after {
+	content: '';
+	background: #00000050;
+	height: 120px;
+	width: 120px;
+	display: block;
+	border: solid 1px #ffffff50;
+	top: 0;
+	left: 0px;
+	right: 0px;
+	margin: 0px auto;
+	position: absolute;
+	transform: rotate(45deg);
+	z-index: -1
+}
+
+.timer-1 .count-down span {
+	display: block;
+	line-height: 10px;
+	color: #fff;
+	font-size: 15px;
+	margin-top: 10px;
+}
+
+
+/*** Index 1 End ***/
+
+
+/*** Index 2 Start ***/
+
+.mockup-2 {
+	background: url(../img/cover-2.jpg);
+	height: 100%;
+	background-size: cover;
+	background-position: center center;
+}
+
+.mockup-2 canvas {
+	position: absolute;
+	z-index: -1;
+}
+
+.timer-2 {
+	margin: 50px auto 40px;
+}
+
+.timer-2 .count-down {
+	font-size: 35px;
+	line-height: 1;
+	font-weight: 700;
+	color: #fff;
+	display: inline-block;
+	width: auto;
+	position: relative;
+	padding: 20px 0 0 0;
+	width: 100px;
+	height: 100px;
+	background: #00000050;
+	border: solid 1px #ffffff20;
+	border-radius: 100%;
+	text-align: center;
+	margin-right: 15px;
+}
+
+.timer-2 .count-down:last-child {
+	margin-right: 0px;
+}
+
+.timer-2 .count-down:first-child {
+	background: #8bc147;
+}
+
+.timer-2 .count-down span {
+	font-weight: 200;
+	display: block;
+	margin-top: 5px;
+	color: #fff;
+	font-size: 16px;
+}
+
+.mockup-2 .subscribe form {
+	border: solid 1px #8bc147;
+}
+
+.mockup-2 .subscribe button.send-mail {
+	background: #8bc147;
+}
+
+
+/*** Index 2 End ***/
+
+
+/*** Index 3 Start ***/
+
+.mockup-3 {
+	background-image: linear-gradient(to right, #00fcff, #00ff42);
+	height: 100%;
+}
+
+.mockup-3 .content {
+	width: 100%;
+	background: url(../img/cover-3.jpg);
+	background-size: cover;
+	background-position: center center;
+	box-shadow: 0px 40px 80px #000000;
+	border-radius: 20px;
+	padding: 100px 0;
+}
+
+.timer-3 {
+	margin: 50px auto 40px;
+	width: 60%;
+	display: inline-block;
+}
+
+.timer-3 .count-down {
+	width: auto;
+	font-size: 60px;
+	line-height: 1;
+	font-weight: 600;
+	color: #00ff42;
+	display: inline-block;
+	position: relative;
+	margin: 0 30px;
+}
+
+.timer-3 .count-down span {
+	font-weight: 200;
+	display: block;
+	color: #ccc;
+	font-size: 20px;
+	margin-top: 10px;
+}
+
+.mockup-3 .subscribe form {
+	border: solid 1px #00fcff;
+}
+
+.mockup-3 .subscribe button.send-mail {
+	background-image: linear-gradient(to right, #00fcff, #00ff42);
+}
+
+
+/*** Index 3 End ***/
+
+
+/*** Index 4 Start ***/
+
+.mockup-4 {
+	background: #e7e5e8 url(../img/cover-4.jpg) no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 100%;
+}
+
+.mockup-4 .wraper {
+	margin: 0 auto;
+	display: flex;
+	min-height: 100%;
+}
+
+.timer-4 {
+	width: 60%;
+	margin: 50px auto 40px;
+	background: #fa3858;
+	border: solid 10px #00000020;
+	padding: 20px 30px;
+	border-radius: 100px;
+	display: inline-flex;
+	justify-content: space-between;
+}
+
+.timer-4 .count-down {
+	font-size: 40px;
+	line-height: 1;
+	font-weight: 600;
+	color: #fff;
+	display: inline-block;
+	margin: 0px;
+	position: relative;
+	padding: 0;
+	border-right: solid 1px #ffffff90;
+}
+
+.timer-4 .count-down:last-child {
+	border-right: none;
+}
+
+.timer-4 .count-down span {
+	font-weight: 400;
+	display: block;
+	color: #fff;
+	font-size: 18px;
+	margin-top: 10px;
+}
+
+.mockup-4 .subscribe form {
+	border: solid 1px #fa3858;
+}
+
+.mockup-4 .subscribe button.send-mail {
+	background: #fa3858;
+}
+
+
+/*** Index 4 End ***/
+
+
+/*** Index 5 Start ***/
+
+.mockup-5 {
+	background: #e7e5e8 url(../img/cover-5.jpg) no-repeat;
+	background-size: cover;
+	background-position: center center;
+	height: 100%;
+}
+
+.mockup-5 .content {
+	width: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	border: solid 1px #ffffff30;
+	box-shadow: 0px 20px 80px #000000;
+	border-radius: 20px;
+	padding: 50px;
+}
+
+.timer-5 {
+	width: 60%;
+	background-color: rgba(0, 0, 0, 0.7);
+	border: solid 1px #ffffff20;
+	padding: 20px 30px;
+	border-radius: 100px;
+	margin: 50px auto 30px;
+	display: inline-flex;
+	justify-content: space-between;
+}
+
+.timer-5 .count-down {
+	font-size: 40px;
+	line-height: 1;
+	font-weight: 600;
+	color: #10d710;
+	display: inline-block;
+	margin: 0px;
+	position: relative;
+	padding: 0;
+	border-right: solid 1px #ffffff20;
+}
+
+.timer-5 .count-down:last-child {
+	border-right: none;
+}
+
+.timer-5 .count-down span {
+	font-weight: 200;
+	display: block;
+	color: #fff;
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+.mockup-5 .subscribe form {
+	border: solid 1px #10d710;
+}
+
+.mockup-5 .subscribe button.send-mail {
+	background: #10d710;
+}
+
+
+/*** Index 5 End ***/
+
+
+/*** Index Gym Start ***/
+
+.gym-index {
+	padding: 0;
+	background: url(../img/gym-cover.jpg) no-repeat;
+	background-position: center center;
+}
+
+.gym-index .container-fluid {
+	padding: 0px 150px;
+}
+
+.gym-index .content {
+	width: 60%;
+	margin: 0px;
+}
+
+.gym-index .content .logo {
+	margin: 0px;
+	margin-bottom: 40px;
+}
+
+.gym-timer {
+	width: 100%;
+	padding: 20px 0;
+	border-radius: 100px;
+	margin: 0;
+	margin-bottom: 40px;
+}
+
+.gym-timer .count-down {
+	width: 15%;
+	padding: 15px 20px;
+	background: #ffffff10;
+	border-bottom: solid 5px #fff;
+	color: #fff;
+	display: inline-block;
+	font-size: 50px;
+	font-weight: 700;
+	line-height: 1;
+	margin: 0 5px;
+}
+
+.gym-timer .count-down:first-child {
+	background: #ff6000;
+	border-bottom: solid 5px #00000050;
+}
+
+.gym-timer .count-down span {
+	font-weight: 200;
+	display: block;
+	color: #fff;
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+.gym-index .description {
+	margin: 0px;
+	font-size: 18px;
+}
+
+.gym-index .subscribe {
+	width: 50%;
+	margin: 0px;
+}
+
+.gym-index .subscribe-heading {
+	font-size: 22px;
+	margin-top: 40px;
+}
+
+.gym-index .subscribe form {
+	width: 100%;
+	line-height: 1;
+	margin: 0;
+	padding: 0px;
+	background: #00000080;
+	border: none;
+	border-bottom: solid 5px #ff6000;
+	display: inline-block;
+	border-radius: 0;
+	display: inline-flex;
+	justify-content: space-between;
+}
+
+.gym-index .subscribe input {
+	background: none;
+	border: none;
+	color: #fff;
+	font-size: 16px;
+	padding: 15px 25px;
+	line-height: 1;
+	width: 100%;
+}
+
+.gym-index .subscribe button.send-mail {
+	border-radius: 0px;
+	border: none;
+	padding: 10px 0;
+	width: 100px;
+	text-align: center;
+	background: none;
+	color: #ff6000;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+.gym-index .display-3 {
+	text-transform: uppercase;
+	display: inline-block;
+}
+
+.gym-index .display-3 span {
+	display: block;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+
+/*** Index Gym End ***/
+
+
+/*** Index Tour & Travels Start ***/
+
+.travel-index {
+	padding: 0;
+	background: url(../img/travel-cover.jpg) no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.travel-index .info-sec.active {
+	right: 0%;
+	box-shadow: -80px 40px 150px #00000020;
+}
+
+.travel-index .container-fluid {
+	padding: 0px 150px;
+}
+
+.travel-index .content {
+	width: 60%;
+	margin: 0px;
+}
+
+.travel-index .content .logo {
+	margin: 0px;
+	margin-bottom: 40px;
+}
+
+.travel-timer {
+	width: 100%;
+	padding: 20px 0;
+	border-radius: 100px;
+	margin: 0;
+	margin-bottom: 40px;
+}
+
+.travel-timer .count-down {
+	width: 15%;
+	padding: 15px 20px;
+	box-shadow: -38px 0 25px #0000001C;
+	color: #000;
+	display: inline-block;
+	font-size: 55px;
+	font-weight: 700;
+	line-height: 1;
+	margin: 0 5px;
+	border-radius: 10px;
+}
+
+.travel-timer .count-down span {
+	font-weight: 400;
+	display: block;
+	color: #fff;
+	font-size: 18px;
+	margin-top: 10px;
+}
+
+.travel-index .description {
+	margin: 0px;
+	font-size: 18px;
+}
+
+.travel-index .subscribe {
+	width: 50%;
+	margin: 0px;
+}
+
+.travel-index .subscribe-heading {
+	font-size: 22px;
+	margin-top: 40px;
+}
+
+.travel-index .subscribe form {
+	width: 100%;
+	line-height: 1;
+	margin: 0;
+	padding: 0px;
+	background: #fff;
+	border: none;
+	border-bottom: solid 5px #ffffff;
+	display: inline-block;
+	border-radius: 0;
+	display: inline-flex;
+	justify-content: space-between;
+}
+
+.travel-index .subscribe input {
+	background: none;
+	border: none;
+	color: #000000;
+	font-size: 16px;
+	padding: 15px 20px;
+	line-height: 1;
+	width: 100%;
+}
+
+.travel-index .subscribe button.send-mail {
+	border-radius: 0px;
+	border: none;
+	padding: 10px 0;
+	width: 100px;
+	text-align: center;
+	background: none;
+	color: #000000;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+.travel-index .display-5 {
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 90px;
+	font-weight: 700;
+}
+
+.travel-index .display-5 span {
+	display: block;
+	font-weight: 300;
+	font-size: 50px;
+	line-height: 20px;
+	letter-spacing: 6px;
+}
+
+
+/*** Index Tour & Travels End ***/
+
+
+/*** Index Medical Start ***/
+
+.medical-index {
+	padding: 0;
+	background: url(../img/medical-cover.jpg) no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.medical-index .info-sec.active {
+	right: 0%;
+	box-shadow: -80px 40px 150px #00000020;
+}
+
+.medical-index .container-fluid {
+	padding: 0px 150px;
+}
+
+.medical-index .content {
+	width: 60%;
+	margin: 0px;
+}
+
+.medical-index .content .logo {
+	margin: 0px;
+	margin-bottom: 40px;
+}
+
+.medical-timer {
+	width: 100%;
+	padding: 20px 0;
+	border-radius: 100px;
+	margin: 0;
+	margin-bottom: 40px;
+}
+
+.medical-timer .count-down {
+	width: 15%;
+	padding: 15px 20px;
+	box-shadow: -38px 0 25px #0000001C;
+	color: #fff;
+	display: inline-block;
+	font-size: 55px;
+	font-weight: 700;
+	line-height: 1;
+	margin: 0 5px;
+	border-radius: 10px;
+}
+
+.medical-timer .count-down span {
+	font-weight: 400;
+	display: block;
+	color: #fff;
+	font-size: 18px;
+	margin-top: 10px;
+}
+
+.medical-index .description {
+	margin: 0px;
+	font-size: 18px;
+}
+
+.medical-index .subscribe {
+	width: 50%;
+	margin: 0px;
+}
+
+.medical-index .subscribe-heading {
+	font-size: 22px;
+	margin-top: 40px;
+}
+
+.medical-index .subscribe form {
+	width: 100%;
+	line-height: 1;
+	margin: 0;
+	padding: 0px;
+	background: #fff;
+	border: none;
+	display: inline-block;
+	border-radius: 0;
+	display: inline-flex;
+	justify-content: space-between;
+}
+
+.medical-index .subscribe input {
+	background: none;
+	border: none;
+	color: #000000;
+	font-size: 16px;
+	padding: 15px 20px;
+	line-height: 1;
+	width: 100%;
+}
+
+.medical-index .subscribe button.send-mail {
+	border-radius: 0px;
+	border: none;
+	padding: 10px 0;
+	width: 100px;
+	text-align: center;
+	background: none;
+	color: #000000;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+.medical-index .display-5 {
+	color: #fff;
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 90px;
+	font-weight: 700;
+}
+
+.medical-index .display-5 span {
+	display: block;
+	font-weight: 300;
+	font-size: 50px;
+	line-height: 20px;
+	letter-spacing: 6px;
+}
+
+
+/*** Index Medical End ***/
+
+
+/*** Index Hotel Start ***/
+
+.hotel-index {
+	padding: 0;
+	background: url(../img/bg.jpg) no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.hotel-index .info-sec.active {
+	right: 0%;
+	box-shadow: -80px 40px 150px #00000020;
+}
+
+.hotel-index .container-fluid {
+	padding: 0px 150px;
+}
+
+.hotel-index .content {
+	width: 60%;
+	margin: 0px;
+}
+
+.hotel-index .content .logo {
+	margin: 0px;
+	margin-bottom: 40px;
+}
+
+.hotel-timer {
+	width: 100%;
+	padding: 20px 0;
+	border-radius: 100px;
+	margin: 0;
+	margin-bottom: 40px;
+}
+
+.hotel-timer .count-down {
+	width: 15%;
+	padding: 15px 20px;
+	color: #fff;
+	display: inline-block;
+	font-size: 45px;
+	font-weight: 700;
+	line-height: 1;
+	margin: 0 5px;
+	background: #00000050;
+	border-radius: 10px;
+}
+
+.hotel-timer .count-down span {
+	font-weight: 400;
+	display: block;
+	color: #fff;
+	font-size: 18px;
+	margin-top: 10px;
+}
+
+.hotel-index .description {
+	margin: 0px;
+	font-size: 18px;
+}
+
+.hotel-index .subscribe {
+	width: 50%;
+	margin: 0px;
+}
+
+.hotel-index .subscribe-heading {
+	font-size: 22px;
+	margin-top: 40px;
+}
+
+.hotel-index .subscribe form {
+	width: 100%;
+	line-height: 1;
+	margin: 0;
+	padding: 0px;
+	background: #fff;
+	border: none;
+	display: inline-block;
+	border-radius: 0;
+	display: inline-flex;
+	justify-content: space-between;
+}
+
+.hotel-index .subscribe input {
+	background: none;
+	border: none;
+	color: #000000;
+	font-size: 16px;
+	padding: 15px 20px;
+	line-height: 1;
+	width: 100%;
+}
+
+.hotel-index .subscribe button.send-mail {
+	border-radius: 0px;
+	border: none;
+	padding: 10px 0;
+	width: 100px;
+	text-align: center;
+	background: none;
+	color: #000000;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+.hotel-index .display-5 {
+	color: #fff;
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 90px;
+	font-weight: 700;
+}
+
+.hotel-index .display-5 span {
+	display: block;
+	font-weight: 300;
+	font-size: 50px;
+	line-height: 20px;
+	letter-spacing: 6px;
+}
+
+
+/*** Index Hotel End ***/
+
+
+/*** Index Salon Start ***/
+
+.salon-index {
+	padding: 0;
+	background: url(../img/salon-cover.jpg) no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.salon-index .info-sec.active {
+	right: 0%;
+	box-shadow: -80px 40px 150px #00000020;
+}
+
+.salon-index .container-fluid {
+	padding: 0px 150px;
+}
+
+.salon-index .content {
+	width: 60%;
+	margin: 0px;
+}
+
+.salon-index .content .logo {
+	margin: 0px;
+	margin-bottom: 40px;
+}
+
+.salon-timer {
+	width: 100%;
+	padding: 20px 0;
+	border-radius: 100px;
+	margin: 0;
+	margin-bottom: 40px;
+}
+
+.salon-timer .count-down {
+	width: 15%;
+	padding: 15px 20px;
+	color: #fff;
+	display: inline-block;
+	font-size: 45px;
+	font-weight: 700;
+	line-height: 1;
+	margin: 0 5px;
+	background: #00000080;
+	border-bottom: 5px solid #000000
+}
+
+.salon-timer .count-down:first-child {
+	background: #61e800;
+	border-bottom: solid 5px #00000050;
+}
+
+.salon-timer .count-down span {
+	font-weight: 400;
+	display: block;
+	color: #fff;
+	font-size: 18px;
+	margin-top: 10px;
+}
+
+.salon-index .description {
+	margin: 0px;
+	font-size: 18px;
+}
+
+.salon-index .subscribe {
+	width: 50%;
+	margin: 0px;
+}
+
+.salon-index .subscribe-heading {
+	font-size: 22px;
+	margin-top: 40px;
+}
+
+.salon-index .subscribe form {
+	width: 100%;
+	line-height: 1;
+	margin: 0;
+	padding: 0px;
+	background: #fff;
+	border: none;
+	display: inline-block;
+	border-radius: 0;
+	display: inline-flex;
+	justify-content: space-between;
+}
+
+.salon-index .subscribe input {
+	background: none;
+	border: none;
+	color: #000000;
+	font-size: 16px;
+	padding: 15px 20px;
+	line-height: 1;
+	width: 100%;
+}
+
+.salon-index .subscribe button.send-mail {
+	border-radius: 0px;
+	border: none;
+	padding: 10px 0;
+	width: 100px;
+	text-align: center;
+	background: none;
+	color: #000000;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+.salon-index .display-5 {
+	color: #fff;
+	display: inline-block;
+	text-transform: uppercase;
+	font-size: 90px;
+	font-weight: 700;
+}
+
+.salon-index .display-5 span {
+	display: block;
+	font-weight: 300;
+	font-size: 50px;
+	line-height: 20px;
+	letter-spacing: 6px;
+}
+
+
+/*** Index Salon End ***/

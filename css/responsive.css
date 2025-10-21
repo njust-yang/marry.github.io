@@ -1,0 +1,529 @@
+@media only screen and (max-width: 1650px) {
+	.gym-index .content,
+	.medical-index .content,
+	.travel-index .content,
+	.hotel-index .content,
+	.salon-index .content {
+		width: 75%;
+	}
+	.gym-index .container-fluid,
+	.medical-index .container-fluid,
+	.travel-index .container-fluid,
+	.hotel-index .container-fluid,
+	.salon-index .container-fluid {
+		padding: 0 50px;
+	}
+}
+
+@media only screen and (max-width: 1366px) {
+	.info-sec {
+		width: 75%;
+		height: 100vh;
+		left: -75%;
+	}
+	section {
+		position: relative;
+		padding: 50px;
+	}
+	section.about-us::after,
+	section.contact::after {
+		font-size: 120px;
+	}
+	.gym-timer .count-down,
+	.medical-timer .count-down,
+	.travel-timer .count-down,
+	.hotel-timer .count-down,
+	.salon-timer .count-down {
+		font-size: 35px;
+	}
+	.gym-index .display-3,
+	.medical-index .display-3,
+	.travel-index .display-3,
+	.hotel-index .display-3,
+	.salon-index .display-3 {
+		font-size: 80px;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.gym-index .content,
+	.medical-index .content,
+	.travel-index .content,
+	.hotel-index .content,
+	.salon-index .content {
+		width: auto;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.info-content .heading {
+		width: 100%;
+	}
+	.display-4 {
+		font-size: 55px;
+	}
+	.timer-1 {
+		margin-bottom: 40px;
+	}
+	.timer-1 .count-down {
+		padding: 17px 0;
+		font-size: 35px;
+		width: 95px;
+		margin: 0px 17px;
+		height: 95px;
+	}
+	.timer-1 .count-down::after {
+		height: 95px;
+		width: 95px;
+	}
+	.timer-3 {
+		margin-bottom: 40px;
+		width: 80%;
+	}
+	.timer-3 .count-down {
+		font-size: 45px;
+	}
+	.timer-5,
+	.timer-4 {
+		width: 90%;
+		margin-bottom: 30px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.menu-sec {
+		width: 250px;
+		right: -250px;
+	}
+	.travel-index .display-5,
+	.salon-index .display-5,
+	.hotel-index .display-5,
+	.medical-index .display-5 {
+		font-size: 45px;
+	}
+	.travel-index .display-5 span,
+	.salon-index .display-5 span,
+	.hotel-index .display-5 span,
+	.medical-index .display-5 span {
+		display: block;
+		font-weight: 300;
+		font-size: 25px;
+		line-height: 20px;
+		letter-spacing: 1px;
+	}
+	.info-content .contact-form {
+		width: 100%
+	}
+	.container {
+		max-width: 100%
+	}
+	.timer-3 {
+		margin-bottom: 40px;
+		width: 85%;
+	}
+	.timer-5,
+	.timer-4 {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.info-content .contact-detail {
+		margin-top: 40px;
+	}
+	.info-content .contact-detail:first-child {
+		margin-top: 0px;
+	}
+	section.about-us::after,
+	section.contact::after {
+		font-size: 100px;
+	}
+	.gym-index .display-3,
+	.medical-index .display-3,
+	.travel-index .display-3,
+	.hotel-index .display-3,
+	.salon-index .display-3 {
+		font-size: 60px;
+	}
+	.gym-index .description,
+	.medical-index .description,
+	.travel-index .description,
+	.hotel-index .description,
+	.salon-index .description {
+		width: 100%;
+	}
+	.gym-timer .count-down,
+	.medical-timer .count-down,
+	.travel-timer .count-down,
+	.hotel-timer .count-down,
+	.salon-timer .count-down {
+		width: 20%;
+	}
+	.gym-index .subscribe,
+	.medical-index .subscribe,
+	.travel-index .subscribe,
+	.hotel-index .subscribe,
+	.salon-index .subscribe {
+		width: 80%
+	}
+	.gym-index .subscribe-heading,
+	.medical-index .subscribe-heading,
+	.travel-index .subscribe-heading,
+	.hotel-index .subscribe-heading,
+	.salon-index .subscribe-heading {
+		width: 100%;
+		font-size: 18px;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	section {
+		padding: 30px;
+	}
+	section.about-us::after,
+	section.contact::after {
+		content: none;
+	}
+	.info-content .heading h2 {
+		font-size: 25px;
+	}
+	.info-content .heading h6 {
+		font-size: 16px;
+	}
+	.about-us .detail i {
+		font-size: 35px;
+		width: 70px;
+		height: 70px;
+		line-height: 50px;
+	}
+	.about-us .detail h4 {
+		margin: 10px 0;
+		font-size: 20px;
+	}
+	.logo {
+		width: 200px;
+		margin-bottom: 20px !important;
+	}
+	.subscribe button.send-mail,
+	.subscribe input[type="text"] {
+		padding: 5px 15px;
+	}
+	.subscribe input[type="text"] {
+		font-size: 14px;
+	}
+	.timer-1 {
+		margin-top: 50px;
+		margin-bottom: 40px;
+	}
+	.timer-1 .count-down {
+		padding: 15px 0;
+		font-size: 22px;
+		width: 75px;
+		margin: 0px 12px;
+		height: 75px;
+	}
+	.timer-1 .count-down::after {
+		height: 75px;
+		width: 75px;
+	}
+	.timer-1 .count-down span {
+		font-size: 14px;
+		font-weight: 300;
+	}
+	.timer-2 {
+		margin: 0 auto 30px;
+	}
+	.timer-2 .count-down {
+		font-size: 30px;
+		line-height: 1;
+		font-weight: 700;
+		color: #fff;
+		display: inline-block;
+		width: auto;
+		position: relative;
+		padding: 13px 0 0 0;
+		width: 80px;
+		height: 80px;
+		background: #00000050;
+		border: solid 1px #ffffff20;
+		border-radius: 100%;
+		text-align: center;
+		margin-right: 15px;
+	}
+	.timer-2 .count-down:first-child {
+		background: #8bc147;
+	}
+	.timer-2 .count-down span {
+		font-weight: 200;
+		display: block;
+		margin-top: 5px;
+		color: #fff;
+		font-size: 14px;
+	}
+	.timer-3 {
+		margin-bottom: 30px;
+		width: 90%;
+	}
+	.timer-3 .count-down {
+		margin: 0 15px;
+		font-size: 35px;
+	}
+	.timer-3 .count-down span {
+		font-size: 14px;
+	}
+	.display-4 {
+		font-size: 45px;
+	}
+	.timer-4 {
+		border: solid 5px #00000020;
+		padding: 15px 20px;
+	}
+	.timer-4 .count-down {
+		font-size: 30px;
+	}
+	.timer-4 .count-down span {
+		font-size: 14px;
+	}
+	.timer-5 .count-down {
+		font-size: 30px;
+	}
+	.timer-5 .count-down span {
+		font-size: 14px;
+	}
+	.gym-index .display-3,
+	.medical-index .display-3,
+	.travel-index .display-3,
+	.hotel-index .display-3,
+	.salon-index .display-3 {
+		font-size: 55px;
+	}
+	.gym-index .description,
+	.medical-index .description,
+	.travel-index .description,
+	.hotel-index .description,
+	.salon-index .description {
+		font-size: 16px;
+	}
+	.gym-index .container-fluid,
+	.medical-index .container-fluid,
+	.travel-index .container-fluid,
+	.hotel-index .container-fluid,
+	.salon-index .container-fluid {
+		padding: 0 30px;
+	}
+	.gym-timer .count-down,
+	.medical-timer .count-down,
+	.travel-timer .count-down,
+	.hotel-timer .count-down,
+	.salon-timer .count-down {
+		width: auto;
+	}
+	.gym-index .subscribe,
+	.medical-index .subscribe,
+	.travel-index .subscribe,
+	.hotel-index .subscribe,
+	.salon-index .subscribe {
+		width: 100%;
+	}
+	.gym-index .subscribe-heading,
+	.medical-index .subscribe-heading,
+	.travel-index .subscribe-heading,
+	.hotel-index .subscribe-heading,
+	.salon-index .subscribe-heading {
+		width: 100%;
+		margin-top: 20px;
+		font-size: 18px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.timer-1 {
+		padding: 0px;
+	}
+	.timer-1 .count-down {
+		padding: 10px 0;
+		font-size: 20px;
+		width: 60px;
+		margin: 0px 9px;
+		height: 60px;
+	}
+	.timer-1 .count-down::after {
+		height: 60px;
+		width: 60px;
+	}
+	.timer-1 .count-down span {
+		font-size: 12px;
+		margin-top: 5px;
+	}
+	p.description {
+		color: #fff;
+		width: 90% !important;
+		margin: auto;
+		line-height: 30px;
+	}
+	.subscribe {
+		width: 80%;
+	}
+	.display-4 {
+		font-size: 40px;
+	}
+	.mockup-3 p.description {
+		width: 90% !important;
+		line-height: 24px;
+	}
+	.timer-2 .count-down {
+		font-size: 25px;
+		line-height: 1;
+		font-weight: 700;
+		color: #fff;
+		display: inline-block;
+		width: auto;
+		position: relative;
+		padding: 13px 0 0 0;
+		width: 75px;
+		height: 75px;
+		background: #00000050;
+		border: solid 1px #ffffff20;
+		border-radius: 100%;
+		text-align: center;
+		margin-right: 15px;
+	}
+	.timer-3 .count-down {
+		margin: 0 10px;
+		font-size: 30px;
+	}
+	.timer-4 {
+		width: 100%;
+	}
+	.timer-4 .count-down {
+		padding: 0 10px;
+		font-size: 25px;
+	}
+	.mockup-5 .content {
+		padding: 50px 20px !important;
+	}
+	.timer-5 {
+		padding: 15px;
+	}
+	.timer-5 .count-down {
+		padding: 0 10px;
+		font-size: 25px;
+	}
+	.gym-index .container-fluid,
+	.medical-index .container-fluid,
+	.travel-index .container-fluid,
+	.hotel-index .container-fluid,
+	.salon-index .container-fluid {
+		padding: 0 15px;
+	}
+	.gym-timer,
+	.medical-timer,
+	.travel-timer,
+	.hotel-timer,
+	.salon-timer {
+		display: flex;
+		justify-content: space-between;
+	}
+	.gym-timer .count-down,
+	.medical-timer .count-down,
+	.travel-timer .count-down,
+	.hotel-timer .count-down,
+	.salon-timer .count-down {
+		width: 25%;
+		font-size: 20px;
+		padding: 10px;
+		border-bottom: 3px solid #fff;
+	}
+	.gym-timer .count-down:first-child,
+	.medical-timer .count-down:first-child,
+	.travel-timer .count-down:first-child,
+	.hotel-timer .count-down:first-child,
+	.salon-timer .count-down:first-child {
+		border-bottom: 3px solid inherit !important;
+	}
+	.gym-index .display-3,
+	.medical-index .display-3,
+	.travel-index .display-3,
+	.hotel-index .display-3,
+	.salon-index .display-3 {
+		font-size: 35px;
+	}
+	.gym-index .display-3 span,
+	.medical-index .display-3 span,
+	.travel-index .display-3 span,
+	.hotel-index .display-3 span,
+	.salon-index .display-3 span {
+		font-size: 16px;
+	}
+	.gym-index .description,
+	.medical-index .description,
+	.travel-index .description,
+	.hotel-index .description,
+	.salon-index .description {
+		width: 100% !important;
+	}
+	.travel-index .display-5,
+	.salon-index .display-5,
+	.hotel-index .display-5,
+	.medical-index .display-5 {
+		font-size: 38px;
+	}
+	.count-down span {
+		font-size: 15px !important;
+	}
+	.timer-1 .count-down::after {
+		content: none;
+	}
+	.timer-1 .count-down {
+		margin: 0px 11px;
+	}
+	.timer-2 .count-down {
+		border: none;
+	}
+	.timer-3 {
+		width: 95%;
+	}
+	.timer-4 {
+		padding: 10px;
+	}
+	.timer-5 .count-down {
+		padding: 0 10px;
+		font-size: 20px;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	.info-toggle {
+		right: -78px;
+		font-size: 14px;
+		padding: 8px 15px;
+	}
+	.menu-toggle {
+		left: -60px;
+		height: 40px;
+		width: 40px;
+		padding: 7px 0px;
+	}
+	.menu-sec.active .menu-toggle {
+		padding: 14px 0px;
+	}
+	.menu-sec {
+		width: 200px;
+		right: -200px;
+	}
+	.timer-1 {
+		display: flex;
+		width: 100%;
+		justify-content: center;
+	}
+	.timer-1 .count-down,
+	.timer-1 .count-down::after {
+		padding: 7px 0;
+		width: 55px;
+		height: 55px;
+	}
+	.subscribe {
+		width: 90%;
+	}
+	.mockup-5 .content {
+		padding: 50px 10px !important;
+	}
+}
