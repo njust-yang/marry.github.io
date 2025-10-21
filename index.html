@@ -25,6 +25,48 @@
 <script src="js/html5shiv.min.js"></script>
 <script src="js/respond.min.js"></script>
 <![endif]-->
+<style>
+/* 调整倒计时数字字体大小 */
+.count-down .count {
+    font-size: 3rem !important;  /* 调整数字大小 */
+}
+
+.count-down .count-type {
+    font-size: 2rem !important;  /* 调整文字标签大小 */
+}
+
+    /* 添加伴手礼按钮样式 */
+    .gift-btn {
+        background: linear-gradient(135deg, #e74c3c, #c0392b);
+        color: white;
+        border: none;
+        padding: 12px 30px;
+        font-size: 1.1em;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-top: 20px;
+        box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
+        font-family: inherit;
+    }
+    
+    .gift-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(231, 76, 60, 0.4);
+    }
+    
+    .buttons-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 30px;
+    }
+    
+    .subscribe {
+        margin-bottom: 20px;
+    }
+</style>
 </head>
 <body class="hotel-index">
 <!-- ====== Preloader ====== -->
@@ -42,118 +84,19 @@
 	   </div>
 	   <div class="display-5" style="font-size: 2rem;">"楠海有余" 婚宴</div>
 	   <p class="description">2026.01.10 11:18 杭州嘉宝丽酒店-上城区杭海路601号</p>
-	   <div class="subscribe">
-		  <p class="subscribe-heading">Get notified when it's ready.</p>
-		  <form>
-			 <input type="text" placeholder="Your Email Address..." />
-			 <button class="send-mail" type="submit"><i class="flaticon-right"></i></button>
-		  </form>
+	   
+	
+	   
+	   <!-- 伴手礼选择按钮 -->
+	   <div class="buttons-container">
+		   <button class="gift-btn" onclick="goToGiftSelection()">
+			   🎁 选择伴手礼
+		   </button>
 	   </div>
+	   
 	</div>
  </div>
 </div>
-<!-- ====== Menu Start ====== -->
-<div class="menu-sec">
- <div class="menu-toggle">
-	<span></span>
-	<span></span>
-	<span></span>
- </div>
- <div class="menu-content">
-	<ul>
-	   <li><a href="index.html"><img src="img/layouts/index-01.jpg" alt="Index 1"></a></li>
-	   <li><a href="#"><img src="img/layouts/index-02.jpg" alt="Index 2"></a></li>
-	   <li><a href="#"><img src="img/layouts/index-03.jpg" alt="Index 3"></a></li>
-	   <li><a href="#"><img src="img/layouts/index-04.jpg" alt="Index 4"></a></li>
-	   <li><a href="#"><img src="img/layouts/index-05.jpg" alt="Index 5"></a></li>
-	   <li><a href="#"><img src="img/layouts/index-gym.jpg" alt="Index Gym"></a></li>
-	   <li><a href="#"><img src="img/layouts/index-hotel.jpg" alt="Index Hotel"></a></li>
-	   <li><a href="#"><img src="img/layouts/index-medical.jpg" alt="Index Medical"></a></li>
-	   <li><a href="#"><img src="img/layouts/index-salon.jpg" alt="Index Salon"></a></li>
-	   <li><a href="#"><img src="img/layouts/index-travels.jpg" alt="Index travels"></a></li>
-	</ul>
- </div>
-</div>
-<!-- ====== Menu End ====== -->
-<!-- ====== Info Start ====== -->
-<div class="info-sec">
- <div class="info-toggle"> Info </div>
- <div class="info-content">
-	<section class="about-us">
-	   <div class="heading">
-		  <h2><span>Who </span>we are</h2>
-		  <h6>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</h6>
-	   </div>
-	   <div class="detail">
-		  <div class="row">
-			 <div class="col-lg-6 col-md-6 col-sm-12 mr-top-20">
-				<i class="flaticon-vision"></i>
-				<h4><span>Our</span> Vision</h4>
-				<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage.</p>
-			 </div>
-			 <div class="col-lg-6 col-md-6 col-sm-12 mr-top-20">
-				<i class="flaticon-business"></i>
-				<h4><span>Our</span> Mission</h4>
-				<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage.</p>
-			 </div>
-		  </div>
-	   </div>
-	</section>
-	<section class="contact">
-	   <div class="heading">
-		  <h2><span>Get in</span> Touch</h2>
-		  <h6>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form</h6>
-	   </div>
-	   <div class="detail">
-		  <div class="contact-form text-center">
-			 <form action="#">
-				<div class="form-group">
-				   <input type="text" placeholder="Full Name">
-				</div>
-				<div class="form-group">
-				   <input type="text" placeholder="Email">
-				</div>
-				<div class="form-group">
-				   <input type="text" placeholder="Subject">
-				</div>
-				<div class="form-group">
-				   <textarea placeholder="Message"></textarea>
-				</div>
-				<div class="form-group">
-				   <button class="submit" type="submit">Submit</button>
-				</div>
-			 </form>
-		  </div> 
-		  <div class="row mr-top-50">
-			 <div class="col-lg-4 col-md-4 col-sm-12 mr-top-20 contact-detail">
-				<i class="flaticon-call"></i>
-				<h5>Call Us On</h5>
-				<div class="description">
-				   Main Office : <span class="value"> 0123-456-789 </span> <br> 
-				   Customer Support : <span class="value"> 0123-456-789  </span>
-				</div>
-			 </div>
-			 <div class="col-lg-4 col-md-4 col-sm-12 mr-top-20 contact-detail">
-				<i class="flaticon-pin"></i>
-				<h5>Location</h5>
-				<div class="description">
-				   Head Office : <span class="value"> 123, Street Name, City Name, State Name, Country Name, Pin Code : 123456 </span>
-				</div>
-			 </div>
-			 <div class="col-lg-4 col-md-4 col-sm-12 mr-top-20 contact-detail">
-				<i class="flaticon-mail"></i>
-				<h5>Email</h5>
-				<div class="description">
-				   <a href="javascript:void(0)" title="support@besiva.com">info@bensiva.com</a> <br>
-				   <a href="javascript:void(0)" title="support@besiva.com">support@bensiva.com</a>
-				</div>
-			 </div>
-		  </div>
-	   </div>
-	</section>
- </div>
-</div>
-<!-- ====== Info End ====== -->
 <!-- JAVASCRIPT FILES ========================================= -->
 <script src="js/jquery.min.js"></script><!-- JQUERY.MIN JS -->
 <script src="plugins/bootstrap/js/popper.min.js"></script><!-- POPPER JS -->
@@ -162,6 +105,43 @@
 <script>
  $('.js-preloader').preloadinator({
    minTime: 2000
+ });
+ 
+ // 跳转到伴手礼选择页面
+ function goToGiftSelection() {
+     window.location.href = 'gift.html';
+ }
+ 
+ // 查看详情功能（可以根据需要修改）
+ function viewDetails() {
+     // 这里可以跳转到其他页面或者显示详细信息
+     alert('查看详情功能');
+     // 或者：window.location.href = 'details.html';
+ }
+ 
+ // 倒计时功能（如果需要）
+ function updateCountdown() {
+     const weddingDate = new Date('2026-01-10T11:18:00');
+     const now = new Date();
+     const diff = weddingDate - now;
+     
+     if (diff > 0) {
+         const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+         const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+         const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+         const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+         
+         document.getElementById('days').innerHTML = `<div class="count">${days}</div><div class="count-type">Days</div>`;
+         document.getElementById('hours').innerHTML = `<div class="count">${hours}</div><div class="count-type">Hours</div>`;
+         document.getElementById('minutes').innerHTML = `<div class="count">${minutes}</div><div class="count-type">Minutes</div>`;
+         document.getElementById('seconds').innerHTML = `<div class="count">${seconds}</div><div class="count-type">Seconds</div>`;
+     }
+ }
+ 
+ // 页面加载完成后初始化
+ document.addEventListener('DOMContentLoaded', function() {
+     updateCountdown();
+     setInterval(updateCountdown, 1000);
  });
 </script>
 <script src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
